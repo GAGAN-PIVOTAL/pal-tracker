@@ -63,7 +63,7 @@ public class InMemoryTimeEntryRepositoryTest {
     @Test
     public void delete() throws Exception {
         InMemoryTimeEntryRepository repo = new InMemoryTimeEntryRepository();
-        TimeEntry created = repo.create(new TimeEntry(123, 456, LocalDate.parse("2017-01-08"), 8));
+        TimeEntry created = repo.create(new TimeEntry(321, 654, LocalDate.parse("2017-01-09"), 5));
 
         repo.delete(created.getId());
         assertThat(repo.list()).isEmpty();

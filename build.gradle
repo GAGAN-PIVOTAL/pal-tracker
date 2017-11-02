@@ -8,6 +8,7 @@ repositories {
 }
 
 dependencies {
+    compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.1")
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
@@ -20,3 +21,8 @@ test.environment([
         "WELCOME_MESSAGE": "Hello from gagan",
 ])
 
+test {
+    testLogging {
+        exceptionFormat = 'full'
+    }
+}
