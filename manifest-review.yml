@@ -5,5 +5,5 @@ applications:
   host: ps-pal-tracker-review-gagan
   services:
   - tracker-database
-  env:
+env:
     - SECURITY_FORCE_HTTPS: true
